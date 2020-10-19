@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+	
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<title>My MoGo</title>
+</head>
+<body>
+
+	<!-- Sprite -->
+
+	<svg style="display: none;">
+		
+		<symbol id="facebook" viewBox="0 0 155.139 155.139">
+		<g>
+	<path d="M89.584,155.139V84.378h23.742l3.562-27.585H89.584V39.184
+		c0-7.984,2.208-13.425,13.67-13.425l14.595-0.006V1.08C115.325,0.752,106.661,0,96.577,0C75.52,0,61.104,12.853,61.104,36.452
+		v20.341H37.29v27.585h23.814v70.761H89.584z"/>
+     </g>
+		</symbol>
+
+		<symbol id="twitter"  viewBox="0 0 512 512">
+		<g>
+	<path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+	c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+	c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+	c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+	c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+	c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+	C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+	C480.224,136.96,497.728,118.496,512,97.248z"/>
+	  </g>
+		</symbol>
+
+		<symbol id="pinterest" viewBox="0 0 511.977 511.977">
+	   <g>
+	<path d="M262.948,0C122.628,0,48.004,89.92,48.004,187.968c0,45.472,25.408,102.176,66.08,120.16
+	c6.176,2.784,9.536,1.6,10.912-4.128c1.216-4.352,6.56-25.312,9.152-35.2c0.8-3.168,0.384-5.92-2.176-8.896
+	c-13.504-15.616-24.224-44.064-24.224-70.752c0-68.384,54.368-134.784,146.88-134.784c80,0,135.968,51.968,135.968,126.304
+	c0,84-44.448,142.112-102.208,142.112c-31.968,0-55.776-25.088-48.224-56.128c9.12-36.96,27.008-76.704,27.008-103.36
+	c0-23.904-13.504-43.68-41.088-43.68c-32.544,0-58.944,32.224-58.944,75.488c0,27.488,9.728,46.048,9.728,46.048
+	S144.676,371.2,138.692,395.488c-10.112,41.12,1.376,107.712,2.368,113.44c0.608,3.168,4.16,4.16,6.144,1.568
+	c3.168-4.16,42.08-59.68,52.992-99.808c3.968-14.624,20.256-73.92,20.256-73.92c10.72,19.36,41.664,35.584,74.624,35.584
+	c98.048,0,168.896-86.176,168.896-193.12C463.62,76.704,375.876,0,262.948,0"/>
+	  </g>
+		</symbol>
+
+		<symbol id="instagram" viewBox="0 0 438.536 438.536">
+		<g>
+	<path d="M421.981,16.562C410.941,5.519,397.711,0,382.298,0H56.248C40.83,0,27.604,5.521,16.561,16.562
+	C5.52,27.6,0.001,40.828,0.001,56.243V382.29c0,15.413,5.518,28.644,16.56,39.683c11.043,11.04,24.272,16.563,39.687,16.563
+		h326.046c15.41,0,28.644-5.523,39.684-16.563c11.043-11.039,16.557-24.27,16.557-39.683V56.243
+		C438.534,40.825,433.021,27.604,421.981,16.562z M157.462,158.025c17.224-16.652,37.924-24.982,62.097-24.982
+		c24.36,0,45.153,8.33,62.381,24.982c17.228,16.655,25.837,36.785,25.837,60.386c0,23.598-8.609,43.729-25.837,60.379
+		c-17.228,16.659-38.014,24.988-62.381,24.988c-24.172,0-44.87-8.336-62.097-24.988c-17.228-16.652-25.841-36.781-25.841-60.379
+		C131.621,194.81,140.234,174.681,157.462,158.025z M388.865,370.589c0,4.945-1.718,9.083-5.141,12.416
+		c-3.433,3.33-7.519,4.996-12.282,4.996h-305.2c-4.948,0-9.091-1.666-12.419-4.996c-3.333-3.326-4.998-7.471-4.998-12.416V185.575
+		H89.08c-3.805,11.993-5.708,24.462-5.708,37.402c0,36.553,13.322,67.715,39.969,93.511c26.65,25.786,58.721,38.685,96.217,38.685
+		c24.744,0,47.583-5.903,68.527-17.703c20.937-11.807,37.486-27.839,49.676-48.112c12.183-20.272,18.274-42.4,18.274-66.38
+		c0-12.94-1.91-25.406-5.715-37.402h38.547v185.014H388.865z M388.865,115.626c0,5.52-1.903,10.184-5.716,13.99
+		c-3.805,3.809-8.466,5.711-13.989,5.711h-49.676c-5.517,0-10.185-1.903-13.99-5.711c-3.806-3.806-5.708-8.47-5.708-13.99V68.522
+		c0-5.33,1.902-9.945,5.708-13.848c3.806-3.901,8.474-5.854,13.99-5.854h49.676c5.523,0,10.185,1.952,13.989,5.854
+		c3.812,3.903,5.716,8.518,5.716,13.848V115.626z"/>
+    </g>
+		</symbol>
+
+		<symbol id="shopping-cart" viewBox="0 0 512 512">
+			<g>
+	<g>
+		<path d="M385.77,247.226v100.444h51.231c6.711,0,12.622-4.408,14.538-10.839l26.687-89.605H385.77z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<rect x="253.305" y="116.444" width="102.135" height="100.446"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M508.992,122.547c-2.863-3.84-7.371-6.102-12.16-6.102H385.77v100.444h101.49l24.108-80.947
+			C512.736,131.353,511.854,126.386,508.992,122.547z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<rect x="253.305" y="247.227" width="102.135" height="100.446"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M110.789,116.445l-20.412-68.54c-1.915-6.43-7.828-10.838-14.538-10.838H15.169C6.792,37.067,0,43.858,0,52.235
+			c0,8.377,6.792,15.169,15.169,15.169H64.53l20.315,68.211c0.061,0.225,0.127,0.448,0.199,0.668l24.007,80.606h113.917V116.445
+			H110.789z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M466.494,405.494h-19.543c-6.581-22.564-27.437-39.102-52.097-39.102c-24.66,0-45.517,16.538-52.097,39.102h-80.482
+			c-6.581-22.564-27.437-39.102-52.097-39.102c-24.66,0-45.517,16.538-52.097,39.102h-15.059c-15.942,0-28.911-12.97-28.911-28.912
+			s12.97-28.911,28.911-28.911h16.287h63.657V247.226H118.085l20.925,70.258c-30.804,2.072-55.237,27.778-55.237,59.098
+			c0,32.67,26.579,59.249,59.248,59.249h15.059c6.581,22.563,27.437,39.102,52.097,39.102c24.659,0,45.516-16.538,52.097-39.102
+			h80.482c6.581,22.563,27.437,39.102,52.097,39.102c24.659,0,45.516-16.538,52.097-39.102h19.543
+			c8.377,0,15.169-6.792,15.169-15.169S474.871,405.494,466.494,405.494z"/>
+	</g>
+		</symbol>
+
+		<symbol id="search" viewBox="0 0 124.524 124.524">
+			<g>
+	   <path d="M51,102.05c10.5,0,20.2-3.2,28.3-8.6l29.3,29.3c2.301,2.3,6.101,2.3,8.5,0l5.7-5.7c2.3-2.3,2.3-6.1,0-8.5L93.4,79.35
+		c5.399-8.1,8.6-17.8,8.6-28.3c0-28.1-22.9-51-51-51c-28.1,0-51,22.9-51,51C0,79.149,22.8,102.05,51,102.05z M51,20.05
+		c17.1,0,31,13.9,31,31c0,17.1-13.9,31-31,31c-17.1,0-31-13.9-31-31C20,33.95,33.9,20.05,51,20.05z"/>
+        </g>
+		</symbol>
+
+		<symbol id="eye" viewBox="0 0 83.43 83.43">
+			<g>
+      <path d="M82.316,39.792C73.947,25.331,58.39,16.348,41.715,16.348c-16.676,0-32.232,8.982-40.603,23.444L0,41.715l1.113,1.924
+		c8.369,14.46,23.926,23.443,40.602,23.443c16.675,0,32.232-8.982,40.602-23.443l1.113-1.924L82.316,39.792z M42.132,55.354
+		c-8.206,0-14.883-6.676-14.883-14.883c0-8.206,6.677-14.883,14.883-14.883s14.883,6.677,14.883,14.883
+		C57.015,48.678,50.338,55.354,42.132,55.354z M8.95,41.715c3.54-5.372,8.314-9.717,13.812-12.76
+		c-2.016,3.377-3.196,7.307-3.196,11.516c0,6.01,2.375,11.458,6.216,15.508C19.014,52.951,13.123,48.048,8.95,41.715z
+		 M59.113,55.281c3.465-3.967,5.582-9.141,5.582-14.811c0-3.898-0.992-7.566-2.739-10.768c4.956,2.992,9.265,7.065,12.522,12.012
+		C70.611,47.584,65.265,52.225,59.113,55.281z M47.988,40.179c0,3.464-2.81,6.272-6.272,6.272c-3.465,0-6.273-2.809-6.273-6.272
+		c0-3.465,2.809-6.273,6.273-6.273C45.179,33.906,47.988,36.714,47.988,40.179z"/>
+</g>
+		</symbol>
+
+		<symbol id="comment" viewBox="0 0 67.025 67.026">
+			<g>
+			<polygon points="41.441,29.477 44.576,31.269 50.848,27.685 41.441,22.086 			"/>
+			<path d="M60.48,18.052l2.24-4.031c1.791-3.137-3.359-6.721-5.824-8.063c-2.465-1.345-8.063-4.257-9.855-0.896l-3.137,5.376
+				c-3.137-0.672-6.721-1.12-10.304-1.12C15.008,9.317,0,19.398,0,31.718c0,12.318,15.008,22.398,33.6,22.398c0,0,0,0,0.225,0
+				c0.224,2.688-2.912,7.168-7.393,9.407c17.698,0,25.761-13.216,25.761-13.216c8.959-4.032,14.783-10.752,14.783-18.592
+				C67.424,26.565,64.736,21.861,60.48,18.052z M15.455,37.99c-1.792,0-3.136-1.346-3.136-3.138c0-1.792,1.344-3.136,3.136-3.136
+				s3.136,1.344,3.136,3.136C18.591,36.644,17.025,37.99,15.455,37.99z M23.743,37.99c-1.792,0-3.136-1.346-3.136-3.138
+				c0-1.792,1.344-3.136,3.136-3.136s3.136,1.344,3.136,3.136C26.879,36.644,25.535,37.99,23.743,37.99z M32.032,37.99
+				c-1.792,0-3.137-1.346-3.137-3.138c0-1.792,1.345-3.136,3.137-3.136s3.136,1.344,3.136,3.136
+				C35.168,36.644,33.824,37.99,32.032,37.99z M51.969,28.357l-6.496,3.584l-5.377,2.911v-6.047v-7.392l8.961-15.456
+				c0.447-0.896,3.584,0,6.943,1.792s5.6,4.031,4.928,4.928L51.969,28.357z"/>
+		</g>
+		</symbol>
+
+		<symbol id="map" viewBox="0 0 512 512">
+			<g>
+		<path d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035
+		c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719
+		c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z"/>
+	    </g>
+		</symbol>
+
+		<symbol id="google_plus" viewBox="0 0 475.092 475.092">
+			<g>
+		<path d="M273.372,302.498c-5.041-6.762-10.608-13.045-16.7-18.842c-6.091-5.804-12.183-11.088-18.271-15.845
+			c-6.092-4.757-11.659-9.329-16.702-13.709c-5.042-4.374-9.135-8.945-12.275-13.702c-3.14-4.757-4.711-9.61-4.711-14.558
+			c0-6.855,2.19-13.278,6.567-19.274c4.377-5.996,9.707-11.799,15.986-17.417c6.28-5.617,12.559-11.753,18.844-18.415
+			c6.276-6.665,11.604-15.465,15.985-26.412c4.373-10.944,6.563-23.458,6.563-37.542c0-16.75-3.713-32.835-11.136-48.25
+			c-7.423-15.418-17.89-27.412-31.405-35.976h38.54L303.2,0H178.441c-17.699,0-35.498,1.906-53.384,5.72
+			c-26.453,5.9-48.723,19.368-66.806,40.397C40.171,67.15,31.129,90.99,31.129,117.637c0,28.171,10.138,51.583,30.406,70.233
+			c20.269,18.649,44.585,27.978,72.945,27.978c5.71,0,12.371-0.478,19.985-1.427c-0.381,1.521-1.043,3.567-1.997,6.136
+			s-1.715,4.62-2.286,6.14c-0.57,1.521-1.047,3.375-1.425,5.566c-0.382,2.19-0.571,4.428-0.571,6.71
+			c0,12.563,6.086,26.744,18.271,42.541c-14.465,0.387-28.737,1.67-42.825,3.86c-14.084,2.19-28.833,5.616-44.252,10.28
+			c-15.417,4.661-29.217,11.42-41.396,20.27c-12.182,8.854-21.317,19.366-27.408,31.549C3.533,361.559,0.01,374.405,0.01,386.017
+			c0,12.751,2.857,24.314,8.565,34.69c5.708,10.369,13.035,18.842,21.982,25.406c8.945,6.57,19.273,12.083,30.978,16.562
+			c11.704,4.47,23.315,7.659,34.829,9.562c11.516,1.903,22.888,2.854,34.119,2.854c51.007,0,90.981-12.464,119.909-37.397
+			c26.648-23.223,39.971-50.062,39.971-80.517c0-10.855-1.57-20.984-4.712-30.409C282.51,317.337,278.42,309.254,273.372,302.498z
+			 M163.311,198.722c-9.707,0-18.937-2.475-27.694-7.426c-8.757-4.95-16.18-11.374-22.27-19.273
+			c-6.088-7.898-11.418-16.796-15.987-26.695c-4.567-9.896-7.944-19.792-10.135-29.692c-2.19-9.895-3.284-19.318-3.284-28.265
+			c0-18.271,4.854-33.974,14.562-47.108c9.705-13.134,23.411-19.701,41.112-19.701c12.563,0,23.935,3.899,34.118,11.704
+			c10.183,7.804,18.177,17.701,23.984,29.692c5.802,11.991,10.277,24.407,13.417,37.257c3.14,12.847,4.711,24.983,4.711,36.403
+			c0,19.036-4.139,34.317-12.419,45.833C195.144,192.964,181.775,198.722,163.311,198.722z M242.251,413.123
+			c-5.23,8.949-12.319,15.94-21.267,20.981c-8.946,5.048-18.509,8.758-28.693,11.14c-10.183,2.385-20.889,3.572-32.12,3.572
+			c-12.182,0-24.27-1.431-36.258-4.284c-11.99-2.851-23.459-7.187-34.403-12.991c-10.944-5.8-19.795-13.798-26.551-23.982
+			c-6.757-10.184-10.135-21.744-10.135-34.69c0-11.419,2.568-21.601,7.708-30.55c5.142-8.945,11.709-16.084,19.702-21.408
+			c7.994-5.332,17.319-9.713,27.979-13.131c10.66-3.433,20.937-5.808,30.833-7.139c9.895-1.335,19.985-1.995,30.262-1.995
+			c6.283,0,11.043,0.191,14.277,0.567c1.143,0.767,4.043,2.759,8.708,5.996s7.804,5.428,9.423,6.57
+			c1.615,1.137,4.567,3.326,8.85,6.563c4.281,3.237,7.327,5.661,9.135,7.279c1.803,1.618,4.421,4.045,7.849,7.279
+			c3.424,3.237,5.948,6.043,7.566,8.422c1.615,2.378,3.616,5.28,5.996,8.702c2.38,3.433,4.043,6.715,4.998,9.855
+			c0.948,3.142,1.854,6.567,2.707,10.277c0.855,3.72,1.283,7.569,1.283,11.57C250.105,393.713,247.487,404.182,242.251,413.123z"/>
+		<polygon points="401.998,73.089 401.998,0 365.449,0 365.449,73.089 292.358,73.089 292.358,109.636 365.449,109.636 
+			365.449,182.725 401.998,182.725 401.998,109.636 475.081,109.636 475.081,73.089 		"/>
+	  </g>
+		</symbol>
+
+		<symbol id="youtube" viewBox="0 -77 512.00213 512">
+			<g>
+			<path d="m501.453125 56.09375c-5.902344-21.933594-23.195313-39.222656-45.125-45.128906-40.066406-10.964844-200.332031-10.964844-200.332031-10.964844s-160.261719 0-200.328125 10.546875c-21.507813 5.902344-39.222657 23.617187-45.125 45.546875-10.542969 40.0625-10.542969 123.148438-10.542969 123.148438s0 83.503906 10.542969 123.148437c5.90625 21.929687 23.195312 39.222656 45.128906 45.128906 40.484375 10.964844 200.328125 10.964844 200.328125 10.964844s160.261719 0 200.328125-10.546875c21.933594-5.902344 39.222656-23.195312 45.128906-45.125 10.542969-40.066406 10.542969-123.148438 10.542969-123.148438s.421875-83.507812-10.546875-123.570312zm0 0"/><path d="m204.96875 256 133.269531-76.757812-133.269531-76.757813zm0 0"/>
+		 </g>
+		</symbol>
+
+		<symbol id="dribbble" viewBox="0 0 24 24">
+			<g>
+				<path d="m16.354 23.17c.02-.006.039-.014.059-.021 12.215-4.853 8.836-23.149-4.413-23.149-6.649 0-12 5.42-12 12 0 8.327 8.434 14.269 16.354 11.17zm-11.073-3.111c.852-1.432 3.609-5.472 8.315-6.866.984 2.509 1.674 5.436 1.742 8.755-3.566 1.199-7.327.392-10.057-1.889zm11.532 1.263c-.131-3.189-.782-6.017-1.71-8.467 2.082-.325 4.492-.108 7.225.987-.581 3.261-2.666 6.002-5.515 7.48zm5.672-9.031c-3.01-1.131-5.663-1.272-7.959-.834-.355-.8-.728-1.569-1.123-2.277 3.523-1.407 5.605-3.122 6.537-4.03 1.645 1.904 2.622 4.369 2.545 7.141zm-3.61-8.209c-.848.807-2.845 2.437-6.26 3.77-1.674-2.648-3.464-4.516-4.598-5.562 3.628-1.494 7.812-.856 10.858 1.792zm-12.292-1.059c.856.753 2.735 2.561 4.548 5.357-2.49.802-5.612 1.391-9.409 1.474.604-2.894 2.408-5.346 4.861-6.831zm-5.051 8.337c4.25-.069 7.69-.74 10.409-1.648.376.659.733 1.377 1.076 2.123-4.735 1.508-7.694 5.401-8.827 7.159-1.828-2.04-2.836-4.702-2.658-7.634z"/>
+			</g>
+		</symbol>
+
+		<symbol id="tumbIr" viewBox="0 0 512 512">
+			<g>
+		<path d="M348.832,428.544c-14.208,0-27.52-3.328-38.528-10.048c-8.8-5.12-16.544-13.824-19.616-22.112
+			c-3.072-8.448-2.752-25.728-2.752-55.296V223.84h128.096v-95.808H287.936V0h-82.528c-3.328,26.336-9.312,48.192-18.112,65.088
+			c-8.416,17.216-20.256,31.776-34.24,44.096c-14.464,12.192-36.864,21.504-57.088,28.128v72.544h68.704V389.28
+			c0,23.52,2.368,41.472,7.424,53.728c4.96,12.352,13.44,23.968,26.4,34.848c12.736,11.008,27.968,19.456,46.176,25.408
+			C262.4,509.12,276.352,512,299.808,512c20.576,0,39.808-1.952,57.408-6.272c17.632-4,36.8-10.08,58.816-20.352v-76.96
+			C390.304,425.216,374.784,428.544,348.832,428.544z"/>
+	     </g>
+		</symbol>
+
+	</svg>
+
+	<!-- Header -->
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header_inner">
+				<div class="header_logo" data-scroll="#intro">MoGo</div>
+				<nav class="nav" id="nav">
+					<a class="nav_link active" href="#" data-scroll="#about">About</a>
+					<a class="nav_link" href="#" data-scroll="#services">service</a>
+					<a class="nav_link" href="#" data-scroll="#work">work</a>
+					<a class="nav_link" href="#" data-scroll="#blog">blog</a>
+					<a class="nav_link" href="#" data-scroll="#footer">contact</a>
+					<a class="nav_link" href="#">
+						<svg  class="nav_icon">
+							<use xlink:href="#shopping-cart"></use>
+						</svg>
+					</a>
+					<a class="nav_link" href="#">
+						<svg  class="nav_icon">
+							<use xlink:href="#search"></use>
+						</svg>
+					</a>
+				</nav>
+
+				<button class="nav-toggle" id="nav_toggle" type="button">
+					<span class="nav-toggle_item">Menu</span>
+				</button>
+
+			</div>
+		</div>  
+	</header>
+
+	<div class="page">
+
+<!-- Intro -->
+		<div class="intro" id="intro">
+			<div class="container">
+				<div class="intro_inner">
+					<h2 class="intro_suptitle">Creative Template</h2>
+					<h1 class="intro_title">Welcome to MoGo</h1>
+					<a class="btn" href="#">Learn more</a>
+				</div>
+			</div>
+
+			<div class="slider">
+				<div class="container">
+					<div class="slider_inner">
+						<div class="slider_item active">
+							<span class="slider_num">01</span>
+							<span class="slider_text">Intro</span>
+						</div>
+						<div class="slider_item">
+							<span class="slider_num">02</span>
+							<span class="slider_text">Work</span>
+						</div>
+						<div class="slider_item">
+							<span class="slider_num">03</span>
+							<span class="slider_text">About</span>
+						</div>
+						<div class="slider_item">
+							<span class="slider_num">04</span>
+							<span class="slider_text">Contacts</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+<!-- About -->
+		<section class="section" id="about">
+			<div class="container">
+
+				<div class="section_header">
+					<h3 class="section_suptitle">What we do</h3>
+					<h2 class="section_title">Story about us</h2>
+					<div class="section_text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card_item">
+						<div class="card_inner">
+							<div class="card_img">
+								<img src="img/About/about1.jpg" alt="">
+							</div>
+							<div class="card_text">super team</div>
+						</div>
+					</div>
+					<div class="card_item">
+						<div class="card_inner">
+							<div class="card_img">
+								<img src="img/About/about2.jpg" alt="">
+							</div>
+							<div class="card_text">super team</div>
+						</div>
+					</div>
+					<div class="card_item">
+						<div class="card_inner">
+							<div class="card_img">
+								<img src="img/About/about3.jpg" alt="">
+							</div>
+							<div class="card_text">super team</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+<!-- Statistics -->
+		<div class="statistics">
+			<div class="container">
+				<div class="stat">
+					<div class="stat_item">
+						<div class="stat_count">42</div>
+						<div class="stat_text">Web Design Projects</div>
+					</div>
+					<div class="stat_item">
+						<div class="stat_count">123</div>
+						<div class="stat_text">happy client</div>
+					</div>
+					<div class="stat_item">
+						<div class="stat_count">15</div>
+						<div class="stat_text">award winner</div>
+					</div>
+					<div class="stat_item">
+						<div class="stat_count">99</div>
+						<div class="stat_text">cup of coffee</div>
+					</div>
+					<div class="stat_item">
+						<div class="stat_count">24</div>
+						<div class="stat_text">members</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- Services -->
+		<section class="section" id="services">
+			<div class="container">
+
+				<div class="section_header">
+					<h3 class="section_suptitle">We work with</h3>
+					<h2 class="section_title">Amazing Services</h2>
+				</div>
+
+				<div class="services">
+					<div class="services_item services_item--border">
+						<img class="services_icon" src="logo/amazing1.png" alt="">
+						<div class="services_title">Photography</div>
+						<div class="services_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+					</div>
+					<div class="services_item services_item--border">
+						<img class="services_icon" src="logo/amazing2.png" alt="">
+						<div class="services_title">Web Design</div>
+						<div class="services_text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+					</div>
+					<div class="services_item services_item--border">
+						<img class="services_icon" src="logo/amazing3.png" alt="">
+						<div class="services_title">Creativity</div>
+						<div class="services_text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+					</div>
+					<div class="services_item">
+						<img class="services_icon" src="logo/amazing4.png" alt="">
+						<div class="services_title">seo</div>
+						<div class="services_text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div>
+					</div>
+					<div class="services_item">
+						<img class="services_icon" src="logo/amazing5.png" alt="">
+						<div class="services_title">Css/Html</div>
+						<div class="services_text">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</div>
+					</div>
+					<div class="services_item">
+						<img class="services_icon" src="logo/amazing6.png" alt="">
+						<div class="services_title">digital</div>
+						<div class="services_text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+					</div>
+
+				</div>
+
+
+			</div>  <!--container-->
+		</section>
+<!-- Devices -->
+		<section class="section section--devices">
+			<div class="container">
+				<div class="section_header">
+					<h3 class="section_suptitle">For all devices</h3>
+					<h2 class="section_title">Unique design</h2>
+				</div>
+
+				<div class="devices">
+					<img class="devices_item" src="img/ipad.webp" alt="">
+					<img class="devices_item devices_item--iphone" src="img/iphone.webp" alt="">
+				</div>
+
+			</div>
+		</section>
+<!-- Wedo -->
+		<section class="section">
+			<div class="container">
+				<div class="section_header">
+					<h3 class="section_suptitle">Service</h3>
+					<h2 class="section_title">what we do</h2>
+					<div class="section_text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+					</div>
+				</div>
+
+				<div class="wedo">
+					<div class="wedo_item">
+						<img class="wedo_img" src="img/wedo.webp" alt="">
+					</div>
+					<div class="wedo_item">
+						<div class="accordion">
+							<div class="accordion_item" data-collapse="#wedo_1">
+								<div class="accordion_header">
+									<img class="accordion_icon" src="logo/Photography.png" alt="">
+									<div class="accordion_title">Photography</div>
+								</div>
+								<div class="accordion_content" id="wedo_1">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</div>
+							</div>
+
+							<div class="accordion_item active" data-collapse="#wedo_2">
+								<div class="accordion_header">
+									<img class="accordion_icon" src="logo/EQUALIZER.png" alt="">
+									<div class="accordion_title">creativity</div>
+								</div>
+								<div class="accordion_content" id="wedo_2">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</div>
+							</div>
+
+							<div class="accordion_item" data-collapse="#wedo_3">
+								<div class="accordion_header">
+									<img class="accordion_icon" src="logo/web_design.png" alt="">
+									<div class="accordion_title">web design</div>
+								</div>
+								<div class="accordion_content" id="wedo_3">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</div>
+							</div>
+						</div> <!--accordion-->
+
+					</div> <!--wedo_item-->
+				</div> <!--wedo-->
+
+			</div>
+		</section>
+<!-- Reviews 1 -->
+		<div class="section section--grey">
+			<div class="container">
+
+				<div class="reviews">
+
+					<div data-slider>
+						<div>
+							<div class="reviews_item">
+								<img class="reviews_photo" src="img/Lay.jpg" alt="">
+								<div class="reviews_text">
+									“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+								</div>
+								<div class="reviews_autor">Jon Doe</div>
+							</div>
+						</div>
+						<div>
+							<div class="reviews_item">
+								<img class="reviews_photo" src="img/Lay.jpg" alt="">
+								<div class="reviews_text">
+									“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+								</div>
+								<div class="reviews_autor">Jon Doe</div>
+							</div>
+						</div>
+						<div>
+							<div class="reviews_item">
+								<img class="reviews_photo" src="img/Lay.jpg" alt="">
+								<div class="reviews_text">
+									“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+								</div>
+								<div class="reviews_autor">Jon Doe</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- Team -->
+		<section class="section">
+			<div class="container">
+
+				<div class="section_header">
+					<h3 class="section_suptitle">Who we are</h3>
+					<h2 class="section_title">Meet our team</h2>
+					<div class="section_text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card_item">
+						<div class="card_inner">
+							<div class="card_img">
+								<img src="img/man1.jpg" alt="">
+							</div>
+							<div class="card_text">
+								<div class="social">
+									<a href="#" class="social_items" target="_blank">
+										<svg  class="social_icon">
+											<use xlink:href="#facebook"></use>
+										</svg>
+									</a>
+									<a href="#" class="social_items" target="_blank">
+										<svg class="social_icon">
+											<use xlink:href="#twitter"></use>
+										</svg>
+									</a>
+									<a href="#" class="social_items" target="_blank">
+										<svg class="social_icon">
+											<use xlink:href="#pinterest"></use>
+										</svg>
+									</a>
+									<a href="#" class="social_items" target="_blank">
+										<svg class="social_icon">
+											<use xlink:href="#instagram"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="card_info">
+							<div class="card_name">Matthew Dix</div>
+							<div class="card_prof">Graphic Design</div>
+						</div>
+					</div>  <!--card_item-->
+					<div class="card_item">
+						<div class="card_inner">
+							<div class="card_img">
+								<img src="img/man2.jpg" alt="">
+							</div>
+							<div class="card_text">
+								<div class="social">
+									<a href="#" class="social_items" target="_blank">
+										<svg  class="social_icon">
+											<use xlink:href="#facebook"></use>
+										</svg>
+									</a>
+									<a href="#" class="social_items" target="_blank">
+										<svg class="social_icon">
+											<use xlink:href="#twitter"></use>
+										</svg>
+									</a>
+									<a href="#" class="social_items" target="_blank">
+										<svg class="social_icon">
+											<use xlink:href="#pinterest"></use>
+										</svg>
+									</a>
+									<a href="#" class="social_items" target="_blank">
+										<svg class="social_icon">
+											<use xlink:href="#instagram"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="card_info">
+							<div class="card_name">Christopher Campbell</div>
+							<div class="card_prof">Branding/UX design</div>
+						</div>
+					</div>  <!--card_item-->
+					<div class="card_item">
+						<div class="card_inner">
+							<div class="card_img">
+								<img src="img/man3.jpg" alt="">
+							</div>
+							<div class="card_text">
+								<div class="social">
+									<a href="#" class="social_items" target="_blank">
+										<svg  class="social_icon">
+											<use xlink:href="#facebook"></use>
+										</svg>
+									</a>
+									<a href="#" class="social_items" target="_blank">
+										<svg class="social_icon">
+											<use xlink:href="#twitter"></use>
+										</svg>
+									</a>
+									<a href="#" class="social_items" target="_blank">
+										<svg class="social_icon">
+											<use xlink:href="#pinterest"></use>
+										</svg>
+									</a>
+									<a href="#" class="social_items" target="_blank">
+										<svg class="social_icon">
+											<use xlink:href="#instagram"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="card_info">
+							<div class="card_name">Michael Fertig</div>
+							<div class="card_prof">Developer</div>
+						</div>
+					</div>   <!--card_item-->
+				</div>   <!--card-->
+
+			</div>   <!--container-->
+		</section>
+<!-- Logos -->
+		<div class="section section--grey">
+			<div class="container">
+
+				<div class="logos">
+					<div class="logos_item">
+						<img class="logos_img" src="img/Team logo/1logo.png" alt="">
+					</div>
+					<div class="logos_item">
+						<img class="logos_img" src="img/Team logo/2logo.png" alt="">
+					</div>
+					<div class="logos_item">
+						<img class="logos_img" src="img/Team logo/3logo.png" alt="">
+					</div>
+					<div class="logos_item">
+						<img class="logos_img" src="img/Team logo/4logo.png" alt="">
+					</div>
+					<div class="logos_item">
+						<img class="logos_img" src="img/Team logo/5logo.png" alt="">
+					</div>
+					<div class="logos_item">
+						<img class="logos_img" src="img/Team logo/6logo.png" alt="">
+					</div>
+				</div>
+			</div>  <!--container-->
+		</div>  <!--section-->
+
+<!-- Works -->
+		<section class="section" id="work">
+			<div class="container">
+
+				<div class="section_header">
+					<h3 class="section_suptitle">What we do</h3>
+					<h2 class="section_title">some of our work</h2>
+					<div class="section_text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+					</div>
+				</div>
+
+			</div>  <!--container-->
+
+			<div class="works">
+				<div class="works_col">
+					<div class="works_item">
+						<img class="works_photo" src="img/Works/works1.jpg" alt="">
+						<div class="works_info">
+							<img class="works_img" src="logo/creatively.png" alt="">
+							<div class="works_title">creatively designed</div>
+							<div class="works_text">Lorem ipsum dolor sit</div>
+						</div>
+					</div>
+					<div class="works_item">
+						<img class="works_photo" src="img/Works/works2.jpg" alt="">
+						<div class="works_info">
+							<img class="works_img" src="logo/creatively.png" alt="">
+							<div class="works_title">creatively designed</div>
+							<div class="works_text">Lorem ipsum dolor sit</div>
+						</div>
+					</div>
+				</div>
+				<div class="works_col">
+					<div class="works_item">
+						<img class="works_photo" src="img/Works/works3.jpg" alt="">
+						<div class="works_info">
+							<img class="works_img" src="logo/creatively.png" alt="">
+							<div class="works_title">creatively designed</div>
+							<div class="works_text">Lorem ipsum dolor sit</div>
+						</div>
+					</div>
+					<div class="works_item">
+						<img class="works_photo" src="img/Works/works4.jpg" alt="">
+						<div class="works_info">
+							<img class="works_img" src="logo/creatively.png" alt="">
+							<div class="works_title">creatively designed</div>
+							<div class="works_text">Lorem ipsum dolor sit</div>
+						</div>
+					</div>
+				</div>
+				<div class="works_col">
+					<div class="works_item">
+						<img class="works_photo" src="img/Works/works5.jpg" alt="">
+						<div class="works_info">
+							<img class="works_img" src="logo/creatively.png" alt="">
+							<div class="works_title">creatively designed</div>
+							<div class="works_text">Lorem ipsum dolor sit</div>
+						</div>
+					</div>
+				</div>
+				<div class="works_col">
+					<div class="works_item">
+						<img class="works_photo" src="img/Works/works6.jpg" alt="">
+						<div class="works_info">
+							<img class="works_img" src="logo/creatively.png" alt="">
+							<div class="works_title">creatively designed</div>
+							<div class="works_text">Lorem ipsum dolor sit</div>
+						</div>
+					</div>
+					<div class="works_item">
+						<img class="works_photo" src="img/Works/works7.jpg" alt="">
+						<div class="works_info">
+							<img class="works_img" src="logo/creatively.png" alt="">
+							<div class="works_title">creatively designed</div>
+							<div class="works_text">Lorem ipsum dolor sit</div>
+						</div>
+					</div>
+				</div>
+			</div>  <!--works-->
+		</section>
+<!-- Reviews  2 -->
+		<div class="section">
+			<div class="container">
+
+				<div class="reviews">
+				
+					<div  data-slider>
+						<div>
+							<div class="reviews_item">
+								<img class="reviews_photo" src="img/Lay.png" alt="">
+								<div class="reviews_text">
+									“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+								</div>
+								<div class="reviews_autor">Jon Doe</div>
+							</div>
+						</div>
+						<div>
+							<div class="reviews_item">
+								<img class="reviews_photo" src="img/Lay.png" alt="">
+								<div class="reviews_text">
+									“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+								</div>
+								<div class="reviews_autor">Jon Doe</div>
+							</div>
+						</div>
+						<div>
+							<div class="reviews_item">
+								<img class="reviews_photo" src="img/Lay.png" alt="">
+								<div class="reviews_text">
+									“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+								</div>
+								<div class="reviews_autor">Jon Doe</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- Clients -->
+		<section class="section section--clients">
+			<div class="container">
+
+				<div class="section_header">
+					<h3 class="section_suptitle">Happy Clients</h3>
+					<h2 class="section_title">What people say</h2>
+				</div>
+
+				<div class="clients">
+					<div class="clients_item">
+						<img class="clients_photo" src="img/what1.png" alt="">
+						<div class="clients_name">Matthew Dix</div>
+						<div class="clients_prof">Graphic Design</div>
+						<div class="clients_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</div>
+					</div>
+					<div class="clients_item">
+						<img class="clients_photo" src="img/what2.png" alt="">
+						<div class="clients_name">Jaelynn Castillo </div>
+						<div class="clients_prof">Graphic Design</div>
+						<div class="clients_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</div>
+					</div>
+					<div class="clients_item">
+						<img class="clients_photo" src="img/what3.png" alt="">
+						<div class="clients_name">Nick Karvounis</div>
+						<div class="clients_prof">Graphic Design</div>
+						<div class="clients_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</div>
+					</div>
+					<div class="clients_item">
+						<img class="clients_photo" src="img/what4.png" alt="">
+						<div class="clients_name">Mike Petrucci</div>
+						<div class="clients_prof">Graphic Design</div>
+						<div class="clients_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</div>
+					</div>
+				</div>  <!--clients-->
+
+			</div>  <!--container-->
+		</section>
+<!-- Blog -->
+		<section class="section" id="blog">
+			<div class="container">
+
+				<div class="section_header">
+					<h3 class="section_suptitle">Our stories</h3>
+					<h2 class="section_title">Latest blog</h2>
+				</div>
+
+				<div class="blog">
+					<div class="blog_item">
+						<div class="blog_header">
+							<a href="#">
+								<img class="blog_photo" src="img/blog1.jpg" alt="">
+							</a>
+							<div class="blog_date">
+								<div class="blog_date-day">15</div>Jan
+							</div>
+						</div>
+						<div class="blog_content">
+							<div class="blog_title">
+								<a href="#">Lorem ipsum dolor sit amet</a>
+							</div>
+							<div class="blog_text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore magna aliqua.</div>
+						</div>
+						<div class="blog_footer">
+							<div class="blog-stat">
+								<span class="blog-stat_item">
+									<svg class="blog-stat_item">
+										<use xlink:href="#eye"></use>
+									</svg>
+								</span>
+								<span class="blog_count">542</span>
+								<span class="blog-stat_item">
+									<svg class="blog-stat_item">
+										<use xlink:href="#comment"></use>
+									</svg>
+								</span>
+								<span class="blog_count">17</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="blog_item">
+						<div class="blog_header">
+							<a href="#">
+								<img class="blog_photo" src="img/blog2.jpg" alt="">
+							</a>
+							<div class="blog_date">
+								<div class="blog_date-day">14</div>Jan
+							</div>
+						</div>
+						<div class="blog_content">
+							<div class="blog_title">
+								<a href="#">sed do eiusmod tempor</a>
+							</div>
+							<div class="blog_text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore magna aliqua.</div>
+						</div>
+						<div class="blog_footer">
+							<div class="blog-stat">
+								<span class="blog-stat_item">
+									<svg class="blog-stat_item">
+										<use xlink:href="#eye"></use>
+									</svg>
+								</span>
+								<span class="blog_count">992</span>
+								<span class="blog-stat_item">
+									<svg class="blog-stat_item">
+										<use xlink:href="#comment"></use>
+									</svg>
+								</span>
+								<span class="blog_count">42</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="blog_item">
+						<div class="blog_header">
+							<a href="#">
+								<img class="blog_photo" src="img/blog3.jpg" alt="">
+							</a>
+							<div class="blog_date">
+								<div class="blog_date-day">12</div>Jan
+							</div>
+						</div>
+						<div class="blog_content">
+							<div class="blog_title">
+								<a href="#">incididunt ut labore et dolore</a>
+							</div>
+							<div class="blog_text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore magna aliqua.</div>
+						</div>
+						<div class="blog_footer">
+							<div class="blog-stat">
+								<span class="blog-stat_item">
+									<svg class="blog-stat_item">
+										<use xlink:href="#eye"></use>
+									</svg>
+								</span>
+								<span class="blog_count">1560</span>
+								<span class="blog-stat_item">
+									<svg class="blog-stat_item">
+										<use xlink:href="#comment"></use>
+									</svg>
+								</span>
+								<span class="blog_count">98</span>
+							</div>
+						</div>
+					</div>
+
+				</div> <!--blog-->
+
+			</div>  <!--container-->
+		</section>
+<!-- Map -->
+		<section class="section section--map">
+			<div class="container">
+				<div class="map">
+					<h2 class="map_title">
+						<svg class="map_icon">
+							<use xlink:href="#map"></use>
+						</svg>
+						<a href="#" target="_blank">Open map</a>
+					</h2>
+				</div>
+			</div>  <!--container-->
+		</section>
+<!-- Footer -->
+		<footer class="footer" id="footer">
+			<div class="container">
+
+				<div class="footer_inner">
+					<div class="footer_col footer_col-first">
+						<div class="footer_logo">MoGo</div>
+						<div class="footer_text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+						<div class="footer_social">
+							<div class="footer_social-header">
+								<b>15k </b>followers
+							</div>
+							<div class="footer_social-content">
+								Follow Us:
+								<a href="#" target="_blank">
+									<svg class="footer_icon">
+										<use xlink:href="#facebook"></use>
+									</svg>
+								</a>
+								<a href="#" target="_blank">
+									<svg class="footer_icon">
+										<use xlink:href="#twitter"></use>
+									</svg>
+								</a>
+								<a href="#" target="_blank">
+									<svg class="footer_icon">
+										<use xlink:href="#instagram"></use>
+									</svg>
+								</a>
+								<a href="#" target="_blank">
+									<svg class="footer_icon">
+										<use xlink:href="#pinterest"></use>
+									</svg>
+								</a>
+								<a href="#" target="_blank">
+									<svg class="footer_icon">
+										<use xlink:href="#google_plus"></use>
+									</svg>
+								</a>
+								<a href="#" target="_blank">
+									<svg class="footer_icon">
+										<use xlink:href="#youtube"></use>
+									</svg>
+								</a>
+								<a href="#" target="_blank">
+									<svg class="footer_icon">
+										<use xlink:href="#dribbble"></use>
+									</svg>
+								</a>
+								<a href="#" target="_blank">
+									<svg class="footer_icon">
+										<use xlink:href="#tumbIr"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<form class="subscribe" action="/" method="post">
+							<input type="email" class="subscribe_input" name="name" placeholder="Your Email...">
+							<button class="subscribe_btn" type="submit">Subscribe</button>
+						</form>
+					</div>  <!--footer_col-->
+
+					<div class="footer_col footer_col-second">
+						<div class="footer_title">Blogs</div>
+						<div class="blogs">
+							<div class="blogs_item">
+								<img class="blogs_img" src="img/blogs_1.jpg" alt="">
+								<div class="blogs_content">
+									<a class="blogs_title" href="#">Lorem ipsum dolor sit amet, 
+									consectetur adipiscing</a>
+									<div class="blogs_date">Jan 9, 2016</div>
+								</div>
+							</div>
+							<div class="blogs_item">
+								<img class="blogs_img" src="img/blogs_2.jpg" alt="">
+								<div class="blogs_content">
+									<a class="blogs_title" href="#">Consectetur adipiscing elit, sed do eiusmod tempor</a>
+									<div class="blogs_date">Jan 9, 2016</div>
+								</div>
+							</div>
+							<div class="blogs_item">
+								<img class="blogs_img" src="img/blogs_3.jpg" alt="">
+								<div class="blogs_content">
+									<a class="blogs_title" href="#">sed do eiusmod tempor 
+									incididunt ut labore</a>
+									<div class="blogs_date">Jan 9, 2016</div>
+								</div>
+							</div>
+
+						</div>  <!-- blogs -->
+					</div>
+
+					<div class="footer_col footer_col-third">
+						<div class="footer_title">Instagram</div>
+						<div class="intagram">
+							<a href="#" class="instagram_item" target="_blank">
+								<img src="img/instagram/instagram1.jpg" alt="">
+							</a>
+							<a href="#" class="instagram_item" target="_blank">
+								<img src="img/instagram/instagram2.jpg" alt="">
+							</a>
+							<a href="#" class="instagram_item" target="_blank">
+								<img src="img/instagram/instagram3.jpg" alt="">
+							</a>
+							<a href="#" class="instagram_item" target="_blank">
+								<img src="img/instagram/instagram4.jpg" alt="">
+							</a>
+							<a href="#" class="instagram_item" target="_blank">
+								<img src="img/instagram/instagram5.jpg" alt="">
+							</a>
+							<a href="#" class="instagram_item" target="_blank">
+								<img src="img/instagram/instagram6.jpg" alt="">
+							</a>
+							<a href="#" class="instagram_item" target="_blank">
+								<img src="img/instagram/instagram7.jpg" alt="">
+							</a>
+							<a href="#" class="instagram_item" target="_blank">
+								<img src="img/instagram/instagram8.jpg" alt="">
+							</a>
+							<a href="#" class="instagram_item" target="_blank">
+								<img src="img/instagram/instagram9.jpg" alt="">
+							</a>
+						</div>
+					</div>
+
+				</div>  <!--footer_inner-->
+
+				<div class="copyright">
+					© 2016 MoGo free PSD template by <span>Laaqiq</span><br> Made by <span>Alex Wild</span>
+				</div>
+
+			</div>  <!--container-->
+		</footer>
+
+	</div> <!--page-->
+
+	<script
+	 src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+				
+    <script src="js/app.js"></script>
+
+</body>
+</html>
