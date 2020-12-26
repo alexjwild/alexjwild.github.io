@@ -5,4 +5,4 @@ My projects!
 
 [Uber](https://alexjwild.github.io/Uber/src)
 
-[Waxon](https://alexjwild.github.io/Waxon/)
+[Waxom](https://alexjwild.github.io/Waxom/)
