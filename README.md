@@ -7,4 +7,4 @@ My projects!
 
 [Waxom](https://alexjwild.github.io/Waxom/)
 
-[RunSmart](https://alexjwild.github.io/RunSmart/src)
+[RunSmart](https://alexjwild.github.io/RunSmart/src/)
