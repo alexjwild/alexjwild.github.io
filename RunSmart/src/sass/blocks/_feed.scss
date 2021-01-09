@@ -1,0 +1,50 @@
+.feed {
+    padding-bottom: 71px;
+    &__item {
+        position: relative;
+        display: flex;
+        margin-top: 100px;
+        &:nth-child(2) {
+            margin-top: 70px;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -48px;
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #f6f6f6;
+        }
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+    }
+    &__img {
+        width: 169px;
+        height: 169px;
+    }
+    &__text {
+        margin-left: 62px;
+        padding-right: 45px;
+    }
+    &__subtitle {
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__count {
+        color: #646464;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 35px;
+    }
+    &__descr {
+        color: #0d0d0d;
+        font-size: 16px;
+        font-weight: 500;
+       
+    }
+}
