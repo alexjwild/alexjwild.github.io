@@ -2,16 +2,18 @@
 $(document).ready(function(){
     $('.carousel__inner').slick({
         speed: 900,
-        adaptiveHeight: true,
-        // autoplay: true,
+        // adaptiveHeight: true,
+        autoplay: true,
         autoplaySpeed: 2000,
+        easing:'ease',
+        fade: true,
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/left-carousel.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/right-carousel.svg"></button>',
         responsive: [
             {
                 breakpoint: 768,
                 settings: {
-                    dots: true,
+                    dots: false,
                     arrows: false
                 } 
             }
