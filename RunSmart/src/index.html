@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
     <!-- Promo -->
-    <section class="promo">
+    <section class="promo" id="up">
       <div class="container">
         <header class="header">
           <a href="#" class="header__logo">
@@ -31,9 +32,9 @@
           </div>
         </header>
         <div class="promo__wrapper">
-          <h1 class="promo__header">Подбор пульсометра</h1>
-          <h2 class="promo__subheader">с учётом Вашего уровня подготовки</h2>
-          <div class="promo__icons">
+          <h1 class="promo__header wow animate__animated animate__fadeInRight">Подбор пульсометра</h1>
+          <h2 class="promo__subheader wow animate__animated animate__fadeInRight" data-wow-delay=".5s">с учётом Вашего уровня подготовки</h2>
+          <div class="promo__icons wow animate__animated animate__fadeInRight" data-wow-delay="1s">
             <div class="promo__icon">
               <img src="icons/promo-icon-1.png" alt="timer" />
               Время подбора: 10 минут
@@ -47,7 +48,7 @@
               Ответим на все вопросы
             </div>
           </div>
-          <button data-modal="consultation" class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
+          <button data-modal="consultation" class="button button_main wow animate__animated animate__infinite animate__headShake">заказать кОНСУЛЬТАЦИЮ</button>
           <div class="promo__link">
             или
             <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
@@ -56,12 +57,12 @@
       </div>
     </section>
     <!-- Advant -->
-    <section class="advant">
+    <div class="advant">
       <div class="container">
         <div class="title">НАШИ ПРЕИМУЩЕСТВА</div>
         <div class="advant__block">
           <div class="advant__item advant__item__1">
-            <img src="icons/advant-1.png" alt="" />
+            <img src="icons/advant-1.png" alt="Goblet" />
             <div class="advant__desc">Делимся опытом</div>
             <div class="advant__text">
               Наши сотрудники всегда готовы поделиться своим опытом, так как
@@ -70,7 +71,7 @@
             </div>
           </div>
           <div class="advant__item">
-            <img src="icons/advant-2.png" alt="" />
+            <img class="advant__icon_animated" src="icons/advant-2.png" alt="Heart" />
             <div class="advant__desc">Заботимся о здоровье</div>
             <div class="advant__text">
               Мы работаем для того,<br />
@@ -79,7 +80,7 @@
             </div>
           </div>
           <div class="advant__item">
-            <img src="icons/advant-3.png" alt="" />
+            <img src="icons/advant-3.png" alt="Shoes" />
             <div class="advant__desc">Учим бегать</div>
             <div class="advant__text">
               Помогаем с обучением <br />
@@ -90,7 +91,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <!-- Consultation -->
     <section class="consultation">
       <div class="container">
@@ -111,21 +112,21 @@
       </div>
     </section>
     <!-- Carousel -->
-    <section class="carousel">
+    <div class="carousel">
       <div class="container">
         <div class="carousel__inner">
           <div>
-            <img data-lazy="img/slide-1.jpg" alt="" />
+            <img src="img/slide-1.jpg" alt="Watch" />
           </div>
           <div>
-            <img data-lazy="img/slide-2.jpg" alt="" />
+            <img src="img/slide-2.jpg" alt="Timer" />
           </div>
           <div>
-            <img data-lazy="img/slide-3.jpg" alt="" />
+            <img src="img/slide-3.jpg" alt="Watches" />
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- Catalog -->
     <section class="catalog">
@@ -153,13 +154,17 @@
                 </div>
                 <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
               </div>
-              <ul class="catalog-item__list">
+
+              <div class="catalog-item__list">
+                <ul>
                 <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
                 <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
                 <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
                 <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                </ul>
                 <a href="#" class="catalog-item__back">НАЗАД</a>
-              </ul>
+              </div>
+
             </div>
             <div class="catalog-item__footer">
               <div class="catalog-item__prices">
@@ -181,13 +186,15 @@
                 </div>
                 <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
               </div>
-              <ul class="catalog-item__list">
+              <div class="catalog-item__list">
+                <ul>
                 <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
                 <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
                 <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
                 <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                </ul>
                 <a href="#" class="catalog-item__back">НАЗАД</a>
-              </ul>
+              </div>
             </div>
             <div class="catalog-item__footer">
               <div class="catalog-item__prices">
@@ -209,13 +216,15 @@
                 </div>
                 <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
               </div>
-              <ul class="catalog-item__list">
+              <div class="catalog-item__list">
+                <ul>
                 <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
                 <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
                 <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
                 <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                </ul>
                 <a href="#" class="catalog-item__back">НАЗАД</a>
-              </ul>
+              </div>
             </div>
             <div class="catalog-item__footer">
               <div class="catalog-item__prices">
@@ -237,13 +246,15 @@
                 </div>
                 <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
               </div>
-              <ul class="catalog-item__list">
+              <div class="catalog-item__list">
+                <ul>
                 <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
                 <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
                 <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
                 <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                </ul>
                 <a href="#" class="catalog-item__back">НАЗАД</a>
-              </ul>
+              </div>
             </div>
             <div class="catalog-item__footer">
               <div class="catalog-item__prices">
@@ -265,13 +276,15 @@
                 </div>
                 <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
               </div>
-              <ul class="catalog-item__list">
+              <div class="catalog-item__list">
+                <ul>
                 <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
                 <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
                 <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
                 <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                </ul>
                 <a href="#" class="catalog-item__back">НАЗАД</a>
-              </ul>
+              </div>
             </div>
             <div class="catalog-item__footer">
               <div class="catalog-item__prices">
@@ -293,13 +306,15 @@
                 </div>
                 <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
               </div>
-              <ul class="catalog-item__list">
+              <div class="catalog-item__list">
+                <ul>
                 <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
                 <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
                 <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
                 <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                </ul>
                 <a href="#" class="catalog-item__back">НАЗАД</a>
-              </ul>
+              </div>
             </div>
             <div class="catalog-item__footer">
               <div class="catalog-item__prices">
@@ -323,13 +338,15 @@
                 </div>
                 <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
               </div>
-              <ul class="catalog-item__list">
+              <div class="catalog-item__list">
+                <ul>
                 <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
                 <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
                 <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
                 <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                </ul>
                 <a href="#" class="catalog-item__back">НАЗАД</a>
-              </ul>
+              </div>
             </div>
             <div class="catalog-item__footer">
               <div class="catalog-item__prices">
@@ -353,13 +370,15 @@
                 </div>
                 <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
               </div>
-              <ul class="catalog-item__list">
+              <div class="catalog-item__list">
+                <ul>
                 <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
                 <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
                 <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
                 <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                </ul>
                 <a href="#" class="catalog-item__back">НАЗАД</a>
-              </ul>
+              </div>
             </div>
             <div class="catalog-item__footer">
               <div class="catalog-item__prices">
@@ -381,13 +400,15 @@
                 </div>
                 <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
               </div>
-              <ul class="catalog-item__list">
+              <div class="catalog-item__list">
+                <ul>
                 <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
                 <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
                 <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
                 <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                </ul>
                 <a href="#" class="catalog-item__back">НАЗАД</a>
-              </ul>
+              </div>
             </div>
             <div class="catalog-item__footer">
               <div class="catalog-item__prices">
@@ -405,7 +426,7 @@
     <section class="feed">
       <div class="container">
         <h2 class="title">отзывы клиентов</h2>
-        <div class="feed__item">
+        <div class="feed__item wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
           <img src="img/feed-1.jpg" alt="Ирина Иванченко" class="feed__img">
           <div class="feed__text">
             <div class="feed__subtitle">Ирина Иванченко</div>
@@ -419,7 +440,7 @@
               </div>
           </div>
         </div>
-        <div class="feed__item">
+        <div class="feed__item wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
           <img src="img/feed-2.jpg" alt="Иван Сёмочкин" class="feed__img">
           <div class="feed__text">
             <div class="feed__subtitle">Иван Сёмочкин</div>
@@ -432,7 +453,7 @@
               </div>
           </div>
         </div>
-        <div class="feed__item">
+        <div class="feed__item wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
           <img src="img/feed-3.jpg" alt="Юлия Дашкина" class="feed__img">
           <div class="feed__text">
             <div class="feed__subtitle">Юлия Дашкина</div>
@@ -450,7 +471,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81279.57824754505!2d30.473330734268494!3d50.45997011395823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb5f0eba36b268857!2sPolar.com.ua!5e0!3m2!1sru!2shu!4v1610191396195!5m2!1sru!2shu" width="100%" height="630" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81279.57824754505!2d30.473330734268494!3d50.45997011395823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb5f0eba36b268857!2sPolar.com.ua!5e0!3m2!1sru!2shu!4v1610191396195!5m2!1sru!2shu" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <div class="footer__info">
         <address class="footer__addr">Киев, улица Басейна, д.9г, оф.21</address>
         <a href="tel:380676402040" class="footer__phone">+38 067-64-02-040</a>
@@ -495,17 +516,16 @@
       </div>
     </div>
 
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
+    <a href="#up" class="pageup">
+      <img src="icons/chevron-circle-up-solid.svg" alt="up">
+    </a>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

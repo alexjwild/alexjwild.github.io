@@ -143,25 +143,30 @@
             transition: .5s all;
             padding-left: 19px;
             margin-bottom: 0;
-            list-style-type: none;
+            
             &_active {
                 transform: translateX(-100%);
                 margin-left: 0px;
             }
-            li {
-                position: relative;
-                color: #555555;
-                font-size: 14px;
-                font-weight: 300;
-                margin-bottom: 20px;
-                &::before {
-                    content: '';
-                    position: absolute;
-                    width: 5px;
-                    height: 5px;
-                    background-color: $main-color;
-                    left: -20px;
-                    top: 7px;
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                li {
+                    position: relative;
+                    color: #555555;
+                    font-size: 14px;
+                    font-weight: 300;
+                    margin-bottom: 20px;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 5px;
+                        height: 5px;
+                        background-color: $main-color;
+                        left: -20px;
+                        top: 7px;
+                    }
                 }
             }
         }

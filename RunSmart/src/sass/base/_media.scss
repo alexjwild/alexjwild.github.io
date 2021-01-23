@@ -109,10 +109,12 @@
                 line-height: 14px;
             }
             &__list {
-                li {
-                    font-size: 11px;
-                    margin-bottom: 8px;
-                    line-height: 14px;
+                ul {
+                    li {
+                        font-size: 11px;
+                        margin-bottom: 8px;
+                        line-height: 14px;
+                    }
                 }
             }
             &__price {
@@ -332,4 +334,5 @@
             padding: 0 15px;
         }
     }
+    
 }
